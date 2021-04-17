@@ -1,0 +1,127 @@
+@import url("./font.css");
+body {
+  background-color: #090b1a;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+}
+
+.card {
+  background-color: #1b1938;
+  text-align: center;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  width: 50%;
+  height: fit-content;
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+}
+
+.card-image-container {
+  position: relative;
+  width: 100%;
+}
+
+.card-image-overlay {
+  width: 100%;
+  background-color: #aa5cdb;
+  opacity: 0.6;
+  position: absolute;
+  height: 100%;
+  z-index: 1;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5em;
+}
+
+.card-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.card-stat-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 1.6em;
+}
+
+.card-stat-number {
+  color: white;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 0.2em;
+  font-weight: 700;
+}
+
+.card-stat-heading {
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  font-family: "Lexend Deca", sans-serif;
+  margin: 2px;
+}
+
+.card-stat-heading:not(:last-child) {
+  margin-bottom: 2em;
+}
+
+.card-title {
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+  margin-top: 1em;
+}
+
+.card-description {
+  color: rgba(255, 255, 255, 0.75);
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  margin-top: 1em;
+  margin-bottom: 1.5em;
+  line-height: 1.6rem;
+}
+
+.card-title #highlight-word {
+  color: #aa5cdb;
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    margin-top: 0;
+  }
+
+  .card {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .card-stat {
+    align-items: center;
+  }
+
+  .card-stat:not(:first-child) {
+    margin-top: 1em;
+  }
+
+  .card-stat-container {
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

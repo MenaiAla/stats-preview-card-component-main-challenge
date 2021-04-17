@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./stylesheet/index.css">
+    <title>Frontend Mentor | Stats preview card component</title>
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="card-image-container"> 
+        <div class="card-image-overlay" ></div>
+        <img class="card-image" srcset="./images/image-header-mobile.jpg 375w,
+        ./images/image-header-desktop.jpg 800w"
+        sizes="(max-width: 600px) 480px,800px"
+         src="./images/image-header-desktop.jpg">
+      </div>
+         <div class="card-content">
+          <span class="card-title">Get <span id="highlight-word">insights</span> that help your business grow.</span>
+          <span class="card-description">Discover the benefits of data analytics and make better decisions
+            regarding revenue, customer experience, and overall efficiency.</span>
+          <div class="card-stat-container">
+            <div class="card-stat">
+              <span class="card-stat-number">10k+</span>
+              <span class="card-stat-heading">companies</span>    
+            </div>
+            <div class="card-stat">
+          <span class="card-stat-number">314</span>
+          <span class="card-stat-heading">templates</span>
+            </div>
+            <div class="card-stat">
+              <span class="card-stat-number">12M+</span>
+              <span class="card-stat-heading">queries</span>    
+            </div>
+         </div>
+      </div>
+    </div>
+  </body>
+</html>
