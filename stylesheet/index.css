@@ -15,7 +15,7 @@ body {
   position: relative;
   display: flex;
   flex-direction: row-reverse;
-  width: 50%;
+  width: 65%;
   height: fit-content;
 }
 
@@ -32,7 +32,8 @@ body {
 .card-image-overlay {
   width: 100%;
   background-color: #aa5cdb;
-  opacity: 0.6;
+  opacity: 0.5;
+  filter: saturate(100%) contrast(150%);
   position: absolute;
   height: 100%;
   z-index: 1;
@@ -41,7 +42,11 @@ body {
 .card-content {
   display: flex;
   flex-direction: column;
-  padding: 1.5em;
+  text-align: left;
+  padding-left: 4rem;
+  padding-right: 6rem;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
 }
 
 .card-stat {
@@ -50,12 +55,16 @@ body {
   align-items: flex-start;
 }
 
+.card-stat:not(:last-child) {
+  margin-right: 4rem;
+}
+
 .card-stat-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  justify-content: space-around;
+  justify-content: flex-start;
   margin-top: 1.6em;
 }
 
@@ -83,7 +92,7 @@ body {
   color: white;
   font-family: "Inter", sans-serif;
   font-weight: 700;
-  font-size: 1.6rem;
+  font-size: 2rem;
   margin-top: 1em;
 }
 
@@ -91,7 +100,7 @@ body {
   color: rgba(255, 255, 255, 0.75);
   font-family: "Lexend Deca", sans-serif;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 1em;
   margin-top: 1em;
   margin-bottom: 1.5em;
   line-height: 1.6rem;
@@ -111,12 +120,21 @@ body {
     width: 100%;
   }
 
+  .card-content {
+    padding: 2rem;
+    text-align: center;
+  }
+
   .card-stat {
     align-items: center;
   }
 
   .card-stat:not(:first-child) {
     margin-top: 1em;
+  }
+
+  .card-stat:not(:last-child) {
+    margin-right: 0;
   }
 
   .card-stat-container {
