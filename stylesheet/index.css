@@ -109,7 +109,7 @@ body {
   color: #aa5cdb;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
   body {
     margin-top: 0;
   }
@@ -138,6 +138,16 @@ body {
 
   .card-stat-container {
     flex-direction: column;
+  }
+}
+@media screen and (min-width: 768px) {
+  .card {
+    width: calc(100vw - 10%);
+  }
+
+  .card-title {
+    font-weight: 500;
+    font-size: 1.8rem;
   }
 }
 
