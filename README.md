@@ -28,9 +28,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution](https://www.frontendmentor.io/solutions/stats-preview-card-component-1cZZLu7c2)
-- Live Site URL: [Demo](https://h8t5o.csb.app/)
-
-## My process
+- Live Site URL: [Demo](https://j7sku.csb.app/)
 
 ### Built with
 
